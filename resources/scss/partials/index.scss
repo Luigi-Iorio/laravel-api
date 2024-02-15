@@ -1,0 +1,21 @@
+// index
+.index {
+    .card {
+        background-color: #3f3f3f;
+        color: white;
+        border: none;
+
+        h3 {
+            color: #00f8b7;
+        }
+
+        .dettaglio {
+            color: #00f8b7;
+            background-color: #6b6b6b;
+
+            &:hover {
+                background-color: #494949;
+            }
+        }
+    }
+}

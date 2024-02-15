@@ -1,0 +1,41 @@
+// admin
+.admin {
+    background-color: #494949;
+
+    header {
+        background-color: #3f3f3f;
+        color: white;
+
+        .menu {
+            color: white;
+            border: none;
+            background-color: transparent;
+
+            .fa-bars {
+                font-size: 18px;
+                font-weight: bold;
+
+                &:hover {
+                    color: #00f8b7;
+                    transition: all 0.5s;
+                }
+            }
+        }
+
+        a {
+            color: currentColor;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bolder;
+
+            &:hover {
+                color: #00f8b7;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    #sidebarMenu {
+        background-color: #3f3f3f;
+    }
+}

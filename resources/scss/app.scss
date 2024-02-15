@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./partials/admin.scss";
+@import "./partials/dashboard.scss";
+@import "./partials/index.scss";
+@import "./partials/show.scss";
+@import "./partials/edit.scss";
+@import "./partials/create.scss";
+
+// body
+body {
+    background-color: #494949;
+
+    .img-logo {
+        height: 50px;
+        width: 50px;
+    }
+}
