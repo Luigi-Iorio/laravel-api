@@ -50,6 +50,7 @@ class ProjectController extends Controller
         $newProject->slug = Str::of($newProject->title)->slug('-');
         $newProject->stack = $data['stack'];
         $newProject->description = $data['description'];
+        $newProject->type_id = $data['type_id'];
 
         $newProject->save();
 
