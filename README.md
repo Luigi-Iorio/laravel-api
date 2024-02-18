@@ -4,11 +4,13 @@ _Questa repo è la prima parte del progetto **Boolfolio**, quì viene gestito il
 
 ### Descrizione
 
-Questo progetto è il proseguimento della repository precedente [laravel-many-to-many](https://github.com/Luigi-Iorio/laravel-many-to-many.git), gestisce le richieste provenienti dal front-end e fornisce i dati relativi ai progetti presenti nel database.
+Questo progetto è il proseguimento della repository precedente [laravel-many-to-many](https://github.com/Luigi-Iorio/laravel-many-to-many.git), gestisce le richieste provenienti dal [front-end](https://github.com/Luigi-Iorio/vite-boolfolio.git) e fornisce i dati relativi ai progetti presenti nel database.
 
 ### Funzionalità implementata
 
 -   **Controller Api**: È stato implementato un `Api/ProjectController` che gestisce le richieste API e restituisce i dati dei progetti presenti nel database nel formato JSON.
+
+-   **Rotta API per il Dettaglio dei Progetti**: Aggiunta una nuova rotta API per il dettaglio dei progetti, che permette di ottenere informazioni specifiche di un progetto.
 
 ### Test Api
 
