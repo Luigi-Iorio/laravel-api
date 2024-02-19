@@ -10,7 +10,11 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = Project::with('type', 'technologies')->paginate(2); // tutti i progetti con relazioni type e technologies
+        if (request()->key) {
+            $projects = Project::where('title', 'LIKE', '%' . request()->key . '%')->paginate(2); // tutti i progetti con il titolo ricercato
+        } else {
+            $projects = Project::with('type', 'technologies')->paginate(2); // tutti i progetti con relazioni type e technologies
+        }
 
         return response()->json([
             'status' => true,
