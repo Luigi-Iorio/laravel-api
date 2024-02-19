@@ -10,6 +10,11 @@ class ProjectController extends Controller
 {
     public function index()
     {
+
+        request()->validate([
+            'key' => ['nullable', 'max:15']
+        ]);
+
         if (request()->key) {
             $projects = Project::where('title', 'LIKE', '%' . request()->key . '%')->paginate(2); // tutti i progetti con il titolo ricercato
         } else {
